@@ -8,7 +8,7 @@ import { useState } from "react";
 export default function Product({data}) {
     return(
     <div className={styles.grid}>
-        {data.map(({id,title,description,price,image}) => (
+        {data.map(({id,title,price,images}) => (
             <Link 
                 key={id} 
                 href={{
@@ -21,7 +21,7 @@ export default function Product({data}) {
             >
                 <div className={styles.card}>
                     <Image 
-                        src={image}
+                        src={images[0]}
                         width="100%"
                         height="100%"
                         layout="responsive"

@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 0 5rem;
+    padding: 0 10%;
     margin-top: 2%;
 }
 
@@ -12,7 +12,7 @@
 }
 
 .descContainer{
-    padding: 0 5rem;
+    padding: 0 10%;
 }
 
 .variantContainer{
@@ -80,8 +80,6 @@
 
 .flexItemRight{
     flex: 50%;
-    align-items: center;
-    justify-content: left;
 }
 
 .imageContainer{

@@ -1,4 +1,4 @@
-export const banner = 'https://cdn.shopify.com/s/files/1/0607/2841/0296/files/Sub_Banner_Desktop_3_1fed8fa7-69c0-485e-a4b6-3b93cda5084c.jpg';
+export const banner = 'https://cdn.shopify.com/s/files/1/0054/6737/3638/files/DESKTOP_194dd37c-e85f-4aec-95ac-f77e5508dace_1800x.jpg';
 
 export const categories = [
   {

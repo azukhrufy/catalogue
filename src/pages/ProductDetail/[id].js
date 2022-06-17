@@ -16,8 +16,6 @@ export default function ProductDetail(props) {
 
 export const getServerSideProps = (context) => {
     const { id } = context.query
-    console.log(context.query)
-
     return {
         props:{
             id: id,
