@@ -4,14 +4,6 @@
     justify-content: center;
 }
 
-.h1{
-    font-family: fantasy;
-    font-size: 6vw;
-    border-bottom: 3px solid black;
-    width: 35%;
-    text-align: center;
-}
-
 .card{
     position: relative;
     margin: 0.5rem;
@@ -30,6 +22,7 @@
         opacity: 0.6;
     }
 }
+
 .centered {
     position: absolute;
     top: 50%;

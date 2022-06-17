@@ -29,13 +29,44 @@ export const categories = [
 
 export const products = [
   {
-      title: 'Kaos Oblong',
-      description: 'Desc Kaos Oblong',
-      price: '50000',
-      discount: '25000',
-      category: 't-shirt',
-      image: 'https://cdn.shopify.com/s/files/1/0607/2841/0296/products/Erigo-T-Shirt-Bill-Russel-Black-1.jpg',
-      id: 0,
+    title: 'Kaos Oblong',
+    description: 'T-Shirt Oversize Erigo saat ini menjadi pilihan terbaik untuk tampil stylish dengan produk yang berkualitas tinggi dan berbagai pilihan warna. Dengan model oversize dan sablon timbul yang berkualitas, T-Shirt Oversize Erigo dapat menambahkan percaya dirimu untuk tampil lebih keren. T-Shirt Oversize Erigo dapat digunakan dengan dipadukan outerwear ataupun tidak. Apapun pilihanmu, T-shirt Oversize dapat membuat tampilanmu lebih menarik.',
+    price: '50000',
+    discount: '25000',
+    category: 't-shirt',
+    image: 'https://cdn.shopify.com/s/files/1/0607/2841/0296/products/Erigo-T-Shirt-Bill-Russel-Black-1.jpg',
+    images: [
+      'https://cdn.shopify.com/s/files/1/0607/2841/0296/products/Erigo-T-Shirt-Bill-Russel-Black-1.jpg',
+      'https://cdn.shopify.com/s/files/1/0607/2841/0296/products/Erigo-T-Shirt-Bill-Russel-Black-5_1024x1024.jpg',
+      'https://cdn.shopify.com/s/files/1/0607/2841/0296/products/Erigo-T-Shirt-Bill-Russel-Black-4_1024x1024.jpg',
+    ],
+    size: [
+      {
+        name: "S",
+        stock: "150",
+        price: '50000',
+        id:0
+      },
+      {
+        name: "M",
+        stock: "50",
+        price: '50000',
+        id:1
+      },
+      {
+        name: "L",
+        stock: "80",
+        price: '55000',
+        id:2
+      },
+      {
+        name: "XL",
+        stock: "60",
+        price: '60000',
+        id:3
+      },
+    ],
+    id: 0,
   },
   {
       title: 'Kaos Oblong 2',
@@ -44,6 +75,37 @@ export const products = [
       discount: '25000',
       category: 't-shirt',
       image: 'https://cdn.shopify.com/s/files/1/0607/2841/0296/products/Erigo-T-Shirt-Maurice-Cheeks-Black-1.jpg',
+      images: [
+        'https://cdn.shopify.com/s/files/1/0607/2841/0296/products/Erigo-T-Shirt-Maurice-Cheeks-Black-1.jpg',
+        'https://cdn.shopify.com/s/files/1/0607/2841/0296/products/Erigo-T-Shirt-Bill-Russel-Black-5_1024x1024.jpg',
+        'https://cdn.shopify.com/s/files/1/0607/2841/0296/products/Erigo-T-Shirt-Bill-Russel-Black-4_1024x1024.jpg',
+      ],
+      size: [
+        {
+          name: "S",
+          stock: "150",
+          price: '50000',
+          id:0
+        },
+        {
+          name: "M",
+          stock: "50",
+          price: '50000',
+          id:1
+        },
+        {
+          name: "L",
+          stock: "80",
+          price: '55000',
+          id:2
+        },
+        {
+          name: "XL",
+          stock: "60",
+          price: '60000',
+          id:3
+        },
+      ],
       id: 1,
   },
   {
@@ -53,6 +115,37 @@ export const products = [
       discount: '25000',
       category: 't-shirt',
       image: 'https://cdn.shopify.com/s/files/1/0607/2841/0296/products/Erigo-T-Shirt-Maurice-Cheeks-White-3_360x.jpg',
+      images: [
+        'https://cdn.shopify.com/s/files/1/0607/2841/0296/products/Erigo-T-Shirt-Maurice-Cheeks-White-3_360x.jpg',
+        'https://cdn.shopify.com/s/files/1/0607/2841/0296/products/Erigo-T-Shirt-Bill-Russel-Black-5_1024x1024.jpg',
+        'https://cdn.shopify.com/s/files/1/0607/2841/0296/products/Erigo-T-Shirt-Bill-Russel-Black-4_1024x1024.jpg',
+      ],
+      size: [
+        {
+          name: "S",
+          stock: "150",
+          price: '50000',
+          id:0
+        },
+        {
+          name: "M",
+          stock: "50",
+          price: '50000',
+          id:1
+        },
+        {
+          name: "L",
+          stock: "80",
+          price: '55000',
+          id:2
+        },
+        {
+          name: "XL",
+          stock: "60",
+          price: '60000',
+          id:3
+        },
+      ],
       id: 2,
   },
   {
@@ -62,6 +155,37 @@ export const products = [
       discount: '25000',
       category: 't-shirt',
       image: 'https://cdn.shopify.com/s/files/1/0607/2841/0296/products/T-Shirt-Oversize-Espinosa-Olive-2-copy_360x.jpg',
+      images: [
+        'https://cdn.shopify.com/s/files/1/0607/2841/0296/products/T-Shirt-Oversize-Espinosa-Olive-2-copy_360x.jpg',
+        'https://cdn.shopify.com/s/files/1/0607/2841/0296/products/Erigo-T-Shirt-Bill-Russel-Black-5_1024x1024.jpg',
+        'https://cdn.shopify.com/s/files/1/0607/2841/0296/products/Erigo-T-Shirt-Bill-Russel-Black-4_1024x1024.jpg',
+      ],
+      size: [
+        {
+          name: "S",
+          stock: "150",
+          price: '50000',
+          id:0
+        },
+        {
+          name: "M",
+          stock: "50",
+          price: '50000',
+          id:1
+        },
+        {
+          name: "L",
+          stock: "80",
+          price: '55000',
+          id:2
+        },
+        {
+          name: "XL",
+          stock: "60",
+          price: '60000',
+          id:3
+        },
+      ],
       id: 3,
   },
   {
@@ -71,6 +195,37 @@ export const products = [
       discount: '25000',
       category: 'outer',
       image: 'https://cdn.shopify.com/s/files/1/0607/2841/0296/products/Hoodie-Kareem-Black-1_360x.jpg',
+      images: [
+        'https://cdn.shopify.com/s/files/1/0607/2841/0296/products/Hoodie-Kareem-Black-1_360x.jpg',
+        'https://cdn.shopify.com/s/files/1/0607/2841/0296/products/Erigo-T-Shirt-Bill-Russel-Black-5_1024x1024.jpg',
+        'https://cdn.shopify.com/s/files/1/0607/2841/0296/products/Erigo-T-Shirt-Bill-Russel-Black-4_1024x1024.jpg',
+      ],
+      size: [
+        {
+          name: "S",
+          stock: "150",
+          price: '50000',
+          id:0
+        },
+        {
+          name: "M",
+          stock: "50",
+          price: '50000',
+          id:1
+        },
+        {
+          name: "L",
+          stock: "80",
+          price: '55000',
+          id:2
+        },
+        {
+          name: "XL",
+          stock: "60",
+          price: '60000',
+          id:3
+        },
+      ],
       id: 4,
   },
 
