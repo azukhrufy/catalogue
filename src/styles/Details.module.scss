@@ -122,3 +122,45 @@
 .rate > label:hover ~ input:checked ~ label {
     color: #c59b08;
 }
+
+@media (max-width: 600px) {
+    .detailsTop{
+        flex-direction: column;
+        left: 0;
+        right: 0;
+        padding: 0;
+    }
+
+    .descContainer{
+        padding: 0;
+    }
+    .flexItemLeft{
+        flex : 100%;
+    }
+
+    .flexItemRight{
+        flex: 100%;
+    }
+
+    .imageContainer{
+        width: 100%;
+        height: 23rem;
+        margin-left: -1rem;
+    }
+
+    .variantContainer{
+        margin-left: -2rem;
+    }
+
+    .detailsBottom{
+        padding: 0;
+    }
+
+    .sizeContainer{
+        margin-bottom: 2rem;
+    }
+
+    .descContainer{
+        padding: 0;
+    }
+}
