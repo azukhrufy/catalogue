@@ -4,7 +4,6 @@ import styles from '../../../../styles/Home.module.css';
 import sty from '../../../../styles/Details.module.scss';
 
 export default function Details({data}) {
-    console.log(data.size[0])
     const [size,setSize] = useState(data.size[0].name)
     const [stock,setStock] = useState(data.size[0].stock)
     const [price,setPrice] = useState(data.size[0].price)
