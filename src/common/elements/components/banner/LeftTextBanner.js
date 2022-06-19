@@ -1,6 +1,7 @@
 import React from 'react'
 
 import Image from 'next/image'
+import Link from "next/link"
 import sty from '../../../../styles/BannerText.module.scss'
 
 export default function LeftTextBanner(){
@@ -10,7 +11,11 @@ export default function LeftTextBanner(){
                 <div className={sty.textBannerContainer}>
                     <h1>Tetap Stylish</h1>
                     <p>Dengan ribuan Pilihan produk terbaik kami</p>
-                    <h3>See All Product</h3>
+                    <Link href="/Products">
+                        <button className={sty.btn}>
+                            See All Product
+                        </button>
+                    </Link>
                 </div>
             </div>
             <div className={sty.banner70Container}>

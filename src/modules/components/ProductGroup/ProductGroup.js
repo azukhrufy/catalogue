@@ -8,7 +8,7 @@ import CategoryCard from '../../../common/elements/components/cards/CategoryCard
 
 function ProductGroup ({data}) {
     return(
-        <div>
+        <div style={{marginBottom: "4rem"}}>
             <CategoryCard 
                 data = {categories}
             />
