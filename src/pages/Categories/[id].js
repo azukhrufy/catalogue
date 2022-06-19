@@ -1,11 +1,17 @@
 import React from 'react'
 
+import Head from 'next/head'
 import styles from '../../styles/Home.module.css'
 import ProductCard from '../../common/elements/components/cards/ProductCard/ProductCard'
 
 export default function index({data}) {
     return (
         <>
+            <Head>
+                    <title>{data.name}</title>
+                    <meta name="description" content="Catalogue" />
+                    <link rel="icon" href="/favicon.ico" />
+                </Head>
             <div className={styles.container}>
                 <main className={styles.main}>
                 <h1 className={styles.title}>
