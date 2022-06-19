@@ -46,3 +46,27 @@
     min-width: 90%;
     text-align: center;
 }
+
+@media (max-width: 600px) {
+    .bannerTextContainer {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-bottom: 1rem;
+    }
+    
+    .bannerTextContainer > .banner70Container{
+        width: 100%;
+    }
+    .bannerTextContainer > .banner30Container{
+        width: 100%;
+    }
+    
+    .banner30Container > .textBannerContainer{
+        min-width: 90%;
+        text-align: center;
+        position: relative;
+        margin-top: 30%;
+    }
+}

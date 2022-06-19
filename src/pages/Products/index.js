@@ -8,15 +8,15 @@ export default function index({data}) {
         <>
             <div className={styles.container}>
                 <main className={styles.main}>
-                <h1 className={styles.title}>
-                    Our Products
-                </h1>
-                <p className={styles.description}>
-                    Nikmati pilihan produk terbaik kami hanya di Azukhrufy Store
-                </p>
-                    <ProductCard
-                        data = {data}            
-                    />
+                    <h1 className={styles.title}>
+                        Our Products
+                    </h1>
+                    <p className={styles.description}>
+                        Nikmati pilihan produk terbaik kami hanya di Azukhrufy Store
+                    </p>
+                        <ProductCard
+                            data = {data}            
+                        />
                 </main>
             </div>
         </>
