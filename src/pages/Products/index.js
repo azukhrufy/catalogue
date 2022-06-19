@@ -1,10 +1,9 @@
 import React from 'react'
 
 import styles from '../../styles/Home.module.css'
-import {products} from '../../constant/constant'
 import ProductCard from '../../common/elements/components/cards/ProductCard/ProductCard'
 
-export default function index() {
+export default function index({data}) {
     return (
         <>
             <div className={styles.container}>
@@ -16,10 +15,19 @@ export default function index() {
                     Nikmati pilihan produk terbaik kami hanya di Azukhrufy Store
                 </p>
                     <ProductCard
-                        data = {products}            
+                        data = {data}            
                     />
                 </main>
             </div>
         </>
     )
+}
+
+export async function getServerSideProps(context) {
+    // Fetch data from external API
+    const res = await fetch(`http://my-json-server.typicode.com/azukhrufy/cataloguedb/products/`)
+    const data = await res.json()
+
+    // Pass data to the page via props
+    return { props: { data } }
 }

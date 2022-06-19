@@ -6,7 +6,7 @@ import categorystyle from '../../../../../styles/Category.module.scss'
 
 export default function CategoryCard({data}) {
     return (
-        <div className={styles.grid}>
+        <div className={styles.grid} style={{marginBottom: "2rem"}}>
             {data.map(({id,title,code,image}) => (
                 <div key={id} className={categorystyle.card}>
                     <Image 

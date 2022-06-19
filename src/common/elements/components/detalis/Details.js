@@ -1,19 +1,19 @@
 import React, { useState } from 'react'
 import Image from 'next/image'
-import { products } from '../../../../constant/constant';
 import styles from '../../../../styles/Home.module.css';
 import sty from '../../../../styles/Details.module.scss';
 
 export default function Details({data}) {
-    const [size,setSize] = useState(products[data.id].size[0].name)
-    const [stock,setStock] = useState(products[data.id].size[0].stock)
-    const [price,setPrice] = useState(products[data.id].size[0].price)
-    const [image,setImage] = useState(products[data.id].images[0])
-    const [imageActive, setImageActive] = useState(products[data.id].images[0])
+    console.log(data.size[0])
+    const [size,setSize] = useState(data.size[0].name)
+    const [stock,setStock] = useState(data.size[0].stock)
+    const [price,setPrice] = useState(data.size[0].price)
+    const [image,setImage] = useState(data.images[0])
+    const [imageActive, setImageActive] = useState(data.images[0])
     const toggleImageActive = (i) => {
         setImageActive(i);
     }
-    const [isActive, setIsActive] = useState(products[data.id].size[0].name);
+    const [isActive, setIsActive] = useState(data.size[0].name);
     const toggleSizeActive = (id) => {
         setIsActive(id);
     };
@@ -32,11 +32,11 @@ export default function Details({data}) {
                             />
                         </div>
                         <div className={sty.variantContainer}>
-                            {products[data.id].images.map((img,i) => (
+                            {data.images.map((img,i) => (
                                 <div 
                                     key={i} 
                                     onClick={() => {
-                                        setImage(products[data.id].images[i]);
+                                        setImage(data.images[i]);
                                         toggleImageActive(i);
                                     }}
                                     className={imageActive === i ? sty.miniImageContainerActive : sty.miniImageContainer}
@@ -53,7 +53,7 @@ export default function Details({data}) {
                         </div>
                     </div>
                     <div className={sty.flexItemRight}>
-                        <h2 style={{margin: "0"}}>{products[data.id].title}</h2>
+                        <h2 style={{margin: "0"}}>{data.title}</h2>
                         <div className={sty.rate}>
                             <input type="radio" id="star5" name="rate" value="5" />
                             <label htmlFor="star5" title="text">5 stars</label>
@@ -72,13 +72,13 @@ export default function Details({data}) {
                         <p>Stok : {stock} </p>
                         <p>Size : {size}</p>
                         <div className={sty.sizeContainer}>
-                            {products[data.id].size.map(({id,name}) => (
+                            {data.size.map(({id,name}) => (
                             <div 
                                 key={id}
                                 onClick={() => {
-                                    setSize(products[data.id].size[id].name);
-                                    setStock(products[data.id].size[id].stock);
-                                    setPrice(products[data.id].size[id].price)
+                                    setSize(data.size[id].name);
+                                    setStock(data.size[id].stock);
+                                    setPrice(data.size[id].price)
                                     toggleSizeActive(id);
                                 }}
                                 className={isActive === id ? sty.sizeCircleActive : sty.sizeCircle}
@@ -93,7 +93,7 @@ export default function Details({data}) {
                     <hr />
                     <div className={sty.descContainer}>
                         <h3>Details</h3>
-                        <p>{products[data.id].description}</p>
+                        <p>{data.description}</p>
                     </div>
                 </div>
             </div>
