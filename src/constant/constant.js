@@ -1,102 +1,232 @@
-export const banner = 'https://cdn.shopify.com/s/files/1/0607/2841/0296/files/Sub_Banner_Desktop_3_1fed8fa7-69c0-485e-a4b6-3b93cda5084c.jpg';
+export const banner = 'https://cdn.shopify.com/s/files/1/0054/6737/3638/files/DESKTOP_194dd37c-e85f-4aec-95ac-f77e5508dace_1800x.jpg';
 
-export const products = [
-    {
-        title: 'Kaos Oblong',
-        description: 'Desc Kaos Oblong',
-        price: '50000',
-        discount: '25000',
-        image: 'https://cdn.shopify.com/s/files/1/0607/2841/0296/products/Erigo-T-Shirt-Bill-Russel-Black-1.jpg',
-        id: 0,
-    },
-    {
-        title: 'Kaos Oblong 2',
-        description: 'Desc Kaos Oblong 2',
-        price: '50000',
-        discount: '25000',
-        image: 'https://cdn.shopify.com/s/files/1/0607/2841/0296/products/Erigo-T-Shirt-Maurice-Cheeks-Black-1.jpg',
-        id: 1,
-    },
-    {
-        title: 'Kaos Oblong 3',
-        description: 'Desc Kaos Oblong 2',
-        price: '50000',
-        discount: '25000',
-        image: 'https://cdn.shopify.com/s/files/1/0607/2841/0296/products/Erigo-T-Shirt-Maurice-Cheeks-White-3_360x.jpg',
-        id: 2,
-    },
-    {
-        title: 'Kaos Oblong 4',
-        description: 'Desc Kaos Oblong 2',
-        price: '50000',
-        discount: '25000',
-        image: 'https://cdn.shopify.com/s/files/1/0607/2841/0296/products/T-Shirt-Oversize-Espinosa-Olive-2-copy_360x.jpg',
-        id: 3,
-    },
-    {
-        title: 'Kaos Oblong 5',
-        description: 'Desc Kaos Oblong 2',
-        price: '50000',
-        discount: '25000',
-        image: 'https://cdn.shopify.com/s/files/1/0607/2841/0296/products/Hoodie-Kareem-Black-1_360x.jpg',
-        id: 4,
-    },
-
+export const categories = [
+  {
+    title: 'T-SHIRT',
+    code: 't-shirt',
+    image: 'https://cdn.shopify.com/s/files/1/0607/2841/0296/files/tshirt.jpg',
+    id: 0,
+  },
+  {
+    title: 'OUTER',
+    code: 'outer',
+    image: 'https://cdn.shopify.com/s/files/1/0607/2841/0296/files/jacket.jpg',
+    id: 1,
+  },
+  {
+    title: 'SHIRT',
+    code: 'shirt',
+    image: 'https://cdn.shopify.com/s/files/1/0607/2841/0296/files/shirt.jpg',
+    id: 2,
+  },
+  {
+    title: 'PANTS',
+    code: 'pants',
+    image: 'https://cdn.shopify.com/s/files/1/0607/2841/0296/files/pants.jpg',
+    id: 3,
+  },
 ];
 
-export const projects = [
-    {
-      title: 'HRMS',
-      description: "HRMS is an ERP Application that I developed using Odoo framework, this application facilitates all in one solution for helps the HR on doing its Jobdesk. Plus this app is integration with Attendance Biometric Device",
-        image: '/images/hrms.png',
-        tags: ['Odoo', 'Pyhton', 'ERP'],
-      source: 'https://google.com',
-      visit: 'https://google.com',
-      id: 0,
-    },
-    {
-      title: 'HRIS',
-      description: "HRIS is an ERP Application that I developed using Odoo framework, this application is present for helps HR to view and manage the information about HR jobdesk. Plus this app is integration with Attendance Biometric Device",
-        image: '/images/hris.png',
-        tags: ['Odoo', 'Pyhton', 'ERP'],
-      source: 'https://google.com',
-      visit: 'https://google.com',
+export const products = [
+  {
+    title: 'Kaos Oblong',
+    description: 'T-Shirt Oversize Erigo saat ini menjadi pilihan terbaik untuk tampil stylish dengan produk yang berkualitas tinggi dan berbagai pilihan warna. Dengan model oversize dan sablon timbul yang berkualitas, T-Shirt Oversize Erigo dapat menambahkan percaya dirimu untuk tampil lebih keren. T-Shirt Oversize Erigo dapat digunakan dengan dipadukan outerwear ataupun tidak. Apapun pilihanmu, T-shirt Oversize dapat membuat tampilanmu lebih menarik.',
+    price: '50000',
+    discount: '25000',
+    category: 't-shirt',
+    image: 'https://cdn.shopify.com/s/files/1/0607/2841/0296/products/Erigo-T-Shirt-Bill-Russel-Black-1.jpg',
+    images: [
+      'https://cdn.shopify.com/s/files/1/0607/2841/0296/products/Erigo-T-Shirt-Bill-Russel-Black-1.jpg',
+      'https://cdn.shopify.com/s/files/1/0607/2841/0296/products/Erigo-T-Shirt-Bill-Russel-Black-5_1024x1024.jpg',
+      'https://cdn.shopify.com/s/files/1/0607/2841/0296/products/Erigo-T-Shirt-Bill-Russel-Black-4_1024x1024.jpg',
+    ],
+    size: [
+      {
+        name: "S",
+        stock: "150",
+        price: '50000',
+        id:0
+      },
+      {
+        name: "M",
+        stock: "50",
+        price: '50000',
+        id:1
+      },
+      {
+        name: "L",
+        stock: "80",
+        price: '55000',
+        id:2
+      },
+      {
+        name: "XL",
+        stock: "60",
+        price: '60000',
+        id:3
+      },
+    ],
+    id: 0,
+  },
+  {
+      title: 'Kaos Oblong 2',
+      description: 'Desc Kaos Oblong 2',
+      price: '50000',
+      discount: '25000',
+      category: 't-shirt',
+      image: 'https://cdn.shopify.com/s/files/1/0607/2841/0296/products/Erigo-T-Shirt-Maurice-Cheeks-Black-1.jpg',
+      images: [
+        'https://cdn.shopify.com/s/files/1/0607/2841/0296/products/Erigo-T-Shirt-Maurice-Cheeks-Black-1.jpg',
+        'https://cdn.shopify.com/s/files/1/0607/2841/0296/products/Erigo-T-Shirt-Bill-Russel-Black-5_1024x1024.jpg',
+        'https://cdn.shopify.com/s/files/1/0607/2841/0296/products/Erigo-T-Shirt-Bill-Russel-Black-4_1024x1024.jpg',
+      ],
+      size: [
+        {
+          name: "S",
+          stock: "150",
+          price: '50000',
+          id:0
+        },
+        {
+          name: "M",
+          stock: "50",
+          price: '50000',
+          id:1
+        },
+        {
+          name: "L",
+          stock: "80",
+          price: '55000',
+          id:2
+        },
+        {
+          name: "XL",
+          stock: "60",
+          price: '60000',
+          id:3
+        },
+      ],
       id: 1,
-    },
-    {
-      title: 'Musfitatur App',
-      description: "MusfitaturApp is a mobile application that I developed using the react native framework, this application facilitates bookings about travel, hajj, umrah.",
-        image: '/images/musfiratur.png',
-        tags: ['React Native'],
-      source: 'https://google.com',
-      visit: 'https://google.com',
+  },
+  {
+      title: 'Kaos Oblong 3',
+      description: 'Desc Kaos Oblong 2',
+      price: '50000',
+      discount: '25000',
+      category: 't-shirt',
+      image: 'https://cdn.shopify.com/s/files/1/0607/2841/0296/products/Erigo-T-Shirt-Maurice-Cheeks-White-3_360x.jpg',
+      images: [
+        'https://cdn.shopify.com/s/files/1/0607/2841/0296/products/Erigo-T-Shirt-Maurice-Cheeks-White-3_360x.jpg',
+        'https://cdn.shopify.com/s/files/1/0607/2841/0296/products/Erigo-T-Shirt-Bill-Russel-Black-5_1024x1024.jpg',
+        'https://cdn.shopify.com/s/files/1/0607/2841/0296/products/Erigo-T-Shirt-Bill-Russel-Black-4_1024x1024.jpg',
+      ],
+      size: [
+        {
+          name: "S",
+          stock: "150",
+          price: '50000',
+          id:0
+        },
+        {
+          name: "M",
+          stock: "50",
+          price: '50000',
+          id:1
+        },
+        {
+          name: "L",
+          stock: "80",
+          price: '55000',
+          id:2
+        },
+        {
+          name: "XL",
+          stock: "60",
+          price: '60000',
+          id:3
+        },
+      ],
       id: 2,
-    },
-    {
-      title: 'digiSchool',
-      description:"digiSchool is a website-based application intended for al izhar schools, made with Nuxt JS, this application contains attendance, and eLearning for students.",
-      image: '/images/digischool.png',
-      tags: ['Nuxt Js', 'LoopBack 4', 'Node Js'],
-      source: 'https://google.com',
-      visit: 'https://google.com',
+  },
+  {
+      title: 'Kaos Oblong 4',
+      description: 'Desc Kaos Oblong 2',
+      price: '50000',
+      discount: '25000',
+      category: 't-shirt',
+      image: 'https://cdn.shopify.com/s/files/1/0607/2841/0296/products/T-Shirt-Oversize-Espinosa-Olive-2-copy_360x.jpg',
+      images: [
+        'https://cdn.shopify.com/s/files/1/0607/2841/0296/products/T-Shirt-Oversize-Espinosa-Olive-2-copy_360x.jpg',
+        'https://cdn.shopify.com/s/files/1/0607/2841/0296/products/Erigo-T-Shirt-Bill-Russel-Black-5_1024x1024.jpg',
+        'https://cdn.shopify.com/s/files/1/0607/2841/0296/products/Erigo-T-Shirt-Bill-Russel-Black-4_1024x1024.jpg',
+      ],
+      size: [
+        {
+          name: "S",
+          stock: "150",
+          price: '50000',
+          id:0
+        },
+        {
+          name: "M",
+          stock: "50",
+          price: '50000',
+          id:1
+        },
+        {
+          name: "L",
+          stock: "80",
+          price: '55000',
+          id:2
+        },
+        {
+          name: "XL",
+          stock: "60",
+          price: '60000',
+          id:3
+        },
+      ],
       id: 3,
-    },
-    {
-      title: 'eBos',
-      description: "eBos is a website for administration and processing of subsidized funds for elementary schools, this application was made using Next JS and Redux Saga",
-        image: '/images/ebos.png',
-        tags: ['Next Js', 'Redux Saga'],
-      source: 'https://google.com',
-      visit: 'https://google.com',
+  },
+  {
+      title: 'Hoodie Kareem Black 1',
+      description: 'Desc Sweater Hitam 1',
+      price: '150000',
+      discount: '25000',
+      category: 'outer',
+      image: 'https://cdn.shopify.com/s/files/1/0607/2841/0296/products/Hoodie-Kareem-Black-1_360x.jpg',
+      images: [
+        'https://cdn.shopify.com/s/files/1/0607/2841/0296/products/Hoodie-Kareem-Black-1_360x.jpg',
+        'https://cdn.shopify.com/s/files/1/0607/2841/0296/products/Erigo-T-Shirt-Bill-Russel-Black-5_1024x1024.jpg',
+        'https://cdn.shopify.com/s/files/1/0607/2841/0296/products/Erigo-T-Shirt-Bill-Russel-Black-4_1024x1024.jpg',
+      ],
+      size: [
+        {
+          name: "S",
+          stock: "150",
+          price: '50000',
+          id:0
+        },
+        {
+          name: "M",
+          stock: "50",
+          price: '50000',
+          id:1
+        },
+        {
+          name: "L",
+          stock: "80",
+          price: '55000',
+          id:2
+        },
+        {
+          name: "XL",
+          stock: "60",
+          price: '60000',
+          id:3
+        },
+      ],
       id: 4,
-    },
-    {
-      title: 'Smartfren Kiosk Dashboard',
-      description: "Kiosk Dashboard is a website for managing smartfren kiosk vending machines, like upgrading the firmware, activating and deactivating vending machines. Built with Angular JS and Loopback 3",
-      image: '/images/smartfren.png',
-      tags: ['Angular Js', 'Loopback 3', 'Node Js'],
-      source: 'https://google.com',
-      visit: 'https://google.com',
-      id: 5,
-    },
-  ];
+  },
+
+];
