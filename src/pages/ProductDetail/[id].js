@@ -15,7 +15,7 @@ export default function ProductDetail({data}) {
 
 export async function getServerSideProps(context) {
     const { id } = context.query
-    const res = await fetch(`http://my-json-server.typicode.com/azukhrufy/cataloguedb/products/${id}`)
+    const res = await fetch(`http://my-json-server.typicode.com/azukhrufy/prodcatalogue/products/${id}`)
     const data = await res.json()
     
     return { props: { data } }
