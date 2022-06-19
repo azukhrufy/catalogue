@@ -1,0 +1,31 @@
+.bannerTextContainer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-bottom: 4.5rem;
+    max-height: 10%;
+}
+
+.banner30Container{
+    flex: 30%;
+    position: relative;
+}
+
+.banner70Container{
+    flex: 70%;
+    position: relative;
+}
+
+.imageBannerContainer{
+    flex: 100%;
+}
+
+.textBannerContainer{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    min-width: 90%;
+    text-align: center;
+}

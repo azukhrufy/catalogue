@@ -3,22 +3,20 @@ import { useRouter } from "next/router";
 import Details from "../../common/elements/components/detalis/Details";
 
 
-export default function ProductDetail(props) {
-
+export default function ProductDetail({data}) {
     return (
         <>
             <div>
-                <Details data = {props}/>
+                <Details data = {data}/>
             </div>
         </>
     )
 }
 
-export const getServerSideProps = (context) => {
+export async function getServerSideProps(context) {
     const { id } = context.query
-    return {
-        props:{
-            id: id,
-        }
-    }
+    const res = await fetch(`http://my-json-server.typicode.com/azukhrufy/cataloguedb/products/${id}`)
+    const data = await res.json()
+    
+    return { props: { data } }
 }
