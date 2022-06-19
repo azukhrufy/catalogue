@@ -30,7 +30,7 @@ export default function Product({data}) {
                         }}
                         />
                     <h4>{title}</h4>
-                    <p>{price}</p>
+                    <p style={{color: "#939393"}}>IDR {price}</p>
                 </div>
             </Link>
         ))}

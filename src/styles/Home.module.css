@@ -30,16 +30,10 @@
   display: flex;
   flex: 1;
   padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
+  border-top: 1px solid #3b3b3b;
+  background-color: #F8F8F8;
   justify-content: center;
   align-items: center;
-}
-
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
 }
 
 .title a {
@@ -97,13 +91,13 @@
   transition: color 0.15s ease, border-color 0.15s ease;
   min-width: 300px;
   min-height: 400px;
+  transition: all 1s;
 }
 
 .card:hover,
 .card:focus,
 .card:active {
-  color: #0070f3;
-  border-color: #0070f3;
+  transform: scale(1.1);
 }
 
 .card h2 {

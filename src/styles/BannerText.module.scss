@@ -17,6 +17,23 @@
     position: relative;
 }
 
+.btn{
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 15px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition: all 0.3s;
+    &:hover{
+        border:2px solid black;
+        background-color: white;
+        color: black;
+    }
+}
+
 .imageBannerContainer{
     flex: 100%;
 }

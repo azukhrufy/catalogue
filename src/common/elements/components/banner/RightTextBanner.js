@@ -1,6 +1,7 @@
 import React from 'react'
 
 import Image from 'next/image'
+import Link from "next/link"
 import sty from '../../../../styles/BannerText.module.scss'
 
 export default function RightTextBanner(){
@@ -23,7 +24,11 @@ export default function RightTextBanner(){
                 <div className={sty.textBannerContainer}>
                     <h1>Keep #UpToDate</h1>
                     <p>Dapatkan pilihan terbaik dari produk kami</p>
-                    <h3>See All Product</h3>
+                    <Link href="/Products">
+                        <button className={sty.btn}>
+                            See All Product
+                        </button>
+                    </Link>
                 </div>
             </div>
         </div>
