@@ -18,7 +18,7 @@ export default function Details({data}) {
     };
     return (
         <>
-            <div className={styles.container}>
+            <div className={sty.container}>
                 <div className={sty.detailsTop}>
                     <div className={sty.flexItemLeft}>
                         <div className={sty.imageContainer}>
