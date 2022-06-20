@@ -52,12 +52,14 @@
 
 .sizeCircle{
     border: 2px solid #000000;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    text-align: center;
     text-decoration: none;
-    padding: 0.4rem;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
     &:hover{
         color: #ffc107;
         border-color: #ffc107;
@@ -66,12 +68,14 @@
 
 .sizeCircleActive{
     border: 2px solid #ffc107;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    text-align: center;
     text-decoration: none;
-    padding: 0.4rem;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
     color: #ffc107;
     &:hover{
         color: #ffc107;
